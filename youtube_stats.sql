@@ -80,7 +80,7 @@ WHERE video_id LIKE '#%';
 
 -- perform EDA
 
--- What is the most commented-upon videos? Or the most liked?
+-- What is the most commented-upon videos? the most liked?
 SELECT 
 	video_id,
     title,
@@ -140,7 +140,7 @@ ORDER BY 3 DESC
 LIMIT 1;
 
 
--- What is the ratio of views/likes per video? Per each category?
+-- What is the ratio of views/likes per video?
 SELECT 
 	video_id,
     title,
