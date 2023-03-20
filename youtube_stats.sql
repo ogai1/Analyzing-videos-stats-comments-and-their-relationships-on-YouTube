@@ -120,14 +120,6 @@ ORDER BY 3 DESC
 LIMIT 1;
 
 
--- What is the ratio of views/likes per video?
-SELECT 
-	video_id,
-    title,
-    (views/likes) as views_per_like
-FROM video_stats;
-
-
 -- What is the ratio of views/likes per category?
 SELECT
 keyword AS category,
