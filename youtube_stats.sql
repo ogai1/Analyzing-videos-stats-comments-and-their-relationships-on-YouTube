@@ -159,16 +159,3 @@ WHERE published_at = (SELECT
 						 MAX(published_at) 
 					  FROM video_stats);
            
-           
-
--- What is the comment with the most likes
-SELECT 
-	video_id,
-	comments,
-    likes
-FROM comments
-WHERE likes = (SELECT
-					 MAX(likes)
-				FROM comments);
-                        
-    
