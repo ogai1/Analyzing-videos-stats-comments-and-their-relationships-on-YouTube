@@ -100,26 +100,6 @@ ORDER BY 3 DESC
 LIMIT 1;
 
 
--- what is the most liked video
-SELECT 
-	video_id,
-	title,
-    views
-FROM video_stats
-ORDER BY 3 DESC
-LIMIT 1;
-
-
--- what is the video with the most comments
-SELECT 
-	video_id,
-	title,
-    comments
-FROM video_stats
-ORDER BY 3 DESC
-LIMIT 1;
-
-
 -- What is the total number of views,likes and comments for each category?
 SELECT
 	keyword AS category,
