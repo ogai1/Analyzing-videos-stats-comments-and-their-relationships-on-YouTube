@@ -119,11 +119,18 @@ FROM comments
 ORDER BY 3 DESC
 LIMIT 1;
 
+-- What is the ratio of views/comments per category?
+SELECT
+keyword AS category,
+    (views/comments) as views_per_comment
+FROM video_stats
+GROUP BY category;
+
 
 -- What is the ratio of views/likes per category?
 SELECT
 keyword AS category,
-    (views/likes) as views_per_category
+    (views/likes) as views_per_likes
 FROM video_stats
 GROUP BY category;
 
